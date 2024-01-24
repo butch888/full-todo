@@ -7,7 +7,9 @@
         "start": "node server.js",
         "lint": "./node_modules/.bin/eslint './**/*.js'",
         "check": "npx prettier --check .",
-        "fix": "npx prettier --write ."
+        "fix": "npx prettier --write .",
+        "husky": "husky install && ./hookSetup.sh",
+        "prepare": "husky install"
     },
     "author": "",
     "license": "ISC",

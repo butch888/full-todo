@@ -7,9 +7,7 @@
         "start": "node server.js",
         "lint": "./node_modules/.bin/eslint './**/*.js'",
         "check": "npx prettier --check .",
-        "fix": "npx prettier --write .",
-        "husky": "husky install && ./hookSetup.sh",
-        "prepare": "husky install"
+        "fix": "npx prettier --write ."
     },
     "author": "",
     "license": "ISC",
@@ -24,7 +22,6 @@
         "eslint-plugin-prettier": "^5.1.3",
         "eslint-plugin-react": "^7.33.2",
         "eslint-plugin-react-hooks": "^4.6.0",
-        "husky": "^8.0.3",
         "prettier": "^3.2.4"
     },
     "dependencies": {

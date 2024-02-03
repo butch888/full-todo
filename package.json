@@ -8,7 +8,8 @@
         "serv": "nodemon server.js",
         "lint": "./node_modules/.bin/eslint './**/*.js'",
         "check": "npx prettier --check .",
-        "fix": "npx prettier --write ."
+        "fix": "npx prettier --write .",
+        "prepare": "husky"
     },
     "author": "",
     "license": "ISC",
@@ -25,6 +26,7 @@
         "eslint-plugin-jsx-a11y": "^6.8.0",
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-prettier": "^5.1.3",
+        "husky": "^9.0.10",
         "prettier": "^3.2.4"
     }
 }

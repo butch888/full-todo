@@ -1,8 +1,10 @@
 const express = require('express');
 const pool = require('../../bd');
+
 const delTaskRouter = express.Router();
 
 // удалить задачу по id
+// eslint-disable-next-line consistent-return
 delTaskRouter.post('/delTask/:id', async (request, response) => {
     const { id } = request.params;
     try {

@@ -1,8 +1,10 @@
 const express = require('express');
 const pool = require('../../bd');
+
 const editTaskRouter = express.Router();
 
 // редактировать текст задачи по id
+// eslint-disable-next-line consistent-return
 editTaskRouter.post('/editTask/:id/:task', async (request, response) => {
     const { id, task } = request.params;
     try {

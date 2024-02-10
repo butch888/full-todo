@@ -1,10 +1,12 @@
 const express = require('express');
 const pool = require('../../bd');
+
 const isdoneTaskRouter = express.Router();
 
 // отметить задачу выполненной по id
 isdoneTaskRouter.post(
     '/taskUpdateIsdone/:id/:isdone',
+    // eslint-disable-next-line consistent-return
     async (request, response) => {
         const { id, isdone } = request.params;
         try {

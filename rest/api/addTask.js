@@ -1,8 +1,10 @@
 const express = require('express');
 const pool = require('../../bd');
+
 const addTasksRouter = express.Router();
 
 // добавить задачу
+// eslint-disable-next-line consistent-return
 addTasksRouter.post('/addTask/:id/:task/:isdone', async (request, response) => {
     const { id, task, isdone } = request.params;
     try {

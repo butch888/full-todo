@@ -27,7 +27,7 @@ app.use('/', isdoneTaskRouter);
 // редактировать текст задачи по id
 app.use('/', delTaskRouter);
 
-const PORT = 3005;
+const PORT = 3001;
 app.listen(PORT, () => {
     console.log(`Server started on port: ${PORT}`);
 });

@@ -7,7 +7,7 @@ const getTasksRouter = express.Router();
 // eslint-disable-next-line consistent-return
 getTasksRouter.get('/', async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM tasks ORDER BY id DESC');
+        const result = await pool.query('SELECT * FROM tasks ORDER BY id');
         res.send(result.rows);
         return result.rows;
     } catch (error) {
